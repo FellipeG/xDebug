@@ -1,0 +1,12 @@
+version: '3'
+services:
+  php:
+    image: ekreative/php:7.4-xdebug
+    command: bash -c "php -S 0.0.0.0:8000"
+    container_name: php_xdebug
+    ports:
+      - "80:8000"
+    volumes: 
+      - ./:/opt/workspace
+      - ./ini/php.ini:/usr/local/etc/php/conf.d/php.ini
+
