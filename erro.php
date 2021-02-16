@@ -6,6 +6,8 @@ use Alura\Leilao\Model\Lance;
 use Alura\Leilao\Model\Leilao;
 use Alura\Leilao\Model\Usuario;
 
+ini_set('xdebug.dump.GET', '*');
+
 $leilao = new Leilao('Carro');
 $leilao->finaliza();
 
